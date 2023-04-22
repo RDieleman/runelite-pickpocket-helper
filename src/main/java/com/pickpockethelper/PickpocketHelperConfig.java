@@ -138,18 +138,6 @@ public interface PickpocketHelperConfig extends Config
 	}
 
 	@ConfigItem(
-			keyName = "preventAtOrBelowThreshold",
-			name = "Prevent Pickpocket on Alert",
-			description = "Prevent pickpocket when health is at or below the specified HP Threshold.",
-			position = 0,
-			section = soundSection
-	)
-	default boolean preventAtOrBelowThreshold()
-	{
-		return false;
-	}
-
-	@ConfigItem(
 		keyName = "hpThreshold",
 		name = "HP Threshold",
 		description = "The hitpoint threshold for being notified. A value of 0 will disable the notification.",
@@ -284,6 +272,18 @@ public interface PickpocketHelperConfig extends Config
 		section = utilitySection
 	)
 	default boolean enableLeftClickPickpocket()
+	{
+		return false;
+	}
+
+	@ConfigItem(
+			keyName = "preventAtOrBelowThreshold",
+			name = "Prevent Pickpocket on Alert",
+			description = "Prevent pickpocket when health is at or below the specified HP Threshold.",
+			position = 3,
+			section = utilitySection
+	)
+	default boolean preventAtOrBelowThreshold()
 	{
 		return false;
 	}
