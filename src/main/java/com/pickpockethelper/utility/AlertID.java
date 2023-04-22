@@ -10,4 +10,6 @@ public class AlertID {
     public final static int SPLASHER_IDLE = 6;
     public final static int TARGET_DESPAWN = 7;
 	public final static int GLOVES_BREAK = 8;
+
+    public final static int EAT_FOOD = 9;
 }

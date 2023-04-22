@@ -250,9 +250,9 @@ public class PickpocketHelperPlugin extends Plugin {
 		}
 
         int currentHealth = this.client.getBoostedSkillLevel(Skill.HITPOINTS);
-        if(currentHealth <= config.getHitpointsThreshold() && config.preventAtOrBelowThreshold()) {
+        if (currentHealth <= config.getHitpointsThreshold() && config.preventAtOrBelowThreshold()) {
             menuOptionClicked.consume();
-            this.client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Current health at or below the set threshold! Eat some food.", null);
+            alertManager.sendAlert(AlertID.EAT_FOOD, true);
         }
 
 		session.getTarget().setNpc(menuOptionClicked.getMenuEntry().getNpc());
