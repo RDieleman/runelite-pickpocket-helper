@@ -252,7 +252,7 @@ public class PickpocketHelperPlugin extends Plugin {
         int currentHealth = this.client.getBoostedSkillLevel(Skill.HITPOINTS);
         if (currentHealth <= config.getHitpointsThreshold() && config.preventAtOrBelowThreshold()) {
             menuOptionClicked.consume();
-            alertManager.sendAlert(AlertID.EAT_FOOD, true);
+            alertManager.sendAlert(AlertID.PICKPOCKET_PREVENTED, true);
         }
 
 		session.getTarget().setNpc(menuOptionClicked.getMenuEntry().getNpc());

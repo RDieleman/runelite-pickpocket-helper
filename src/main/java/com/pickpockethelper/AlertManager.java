@@ -38,7 +38,7 @@ public class AlertManager {
         messages.put(AlertID.PLAYER_IDLE, "You are no longer pickpocketing!");
         messages.put(AlertID.NO_INVENTORY_SPACE, "There is no space for your loot!");
 		messages.put(AlertID.GLOVES_BREAK, "Your gloves of silence are about to break!");
-        messages.put(AlertID.EAT_FOOD, "Current health at or below the set threshold! Eat some food to continue pickpocketing.");
+        messages.put(AlertID.PICKPOCKET_PREVENTED, "Pickpocket prevented. Eat some food to continue.");
     }
 
     /**

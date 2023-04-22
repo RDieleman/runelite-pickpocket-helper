@@ -11,5 +11,5 @@ public class AlertID {
     public final static int TARGET_DESPAWN = 7;
 	public final static int GLOVES_BREAK = 8;
 
-    public final static int EAT_FOOD = 9;
+    public final static int PICKPOCKET_PREVENTED = 9;
 }
