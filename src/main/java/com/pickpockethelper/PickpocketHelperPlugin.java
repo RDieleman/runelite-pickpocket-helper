@@ -648,7 +648,7 @@ public class PickpocketHelperPlugin extends Plugin {
 
             if((entry.getOption().equalsIgnoreCase("pickpocket")
 		&& !client.isKeyPressed(KeyCode.KC_SHIFT))
-	      || (entry.getOption().equalsIgnoreCase("blackjack")
+	      || (entry.getOption().equalsIgnoreCase("knock-out")
 		&& client.isKeyPressed(KeyCode.KC_SHIFT))) {
                 Map.Entry<MenuEntry, Integer> defaultLeftClickOption = defaultLeftClicks.get(entry.getNpc().getIndex());
 
